@@ -1,0 +1,19 @@
+SETUP INSTRUCTIONS:
+
+1. Create a file named ".env" in the Backend directory with the following content:
+   MONGO_URI=mongodb+srv://your_username:your_password@your_cluster.mongodb.net/your_database
+
+2. Replace the placeholder values with your actual MongoDB connection string:
+   - your_username: Your MongoDB Atlas username
+   - your_password: Your MongoDB Atlas password  
+   - your_cluster: Your MongoDB Atlas cluster name
+   - your_database: Your database name
+
+3. To start the server, run:
+   node server.js
+
+4. The server will run on http://localhost:3003
+
+5. Make sure your React frontend is running on http://localhost:3000
+
+Note: The .env file should be in the Backend directory, not the root directory. 
