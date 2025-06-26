@@ -1,0 +1,36 @@
+.head-txt{
+    text-align: center;
+}
+.review-containers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.container{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #fefff7;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.container:hover{
+    transform: scale(1.08);
+    transition: 0.3s;
+}
+
+@media  and (max-width: 768px) {
+   .review-containers {
+    justify-content: flex-start; /* optional tweak */
+  }
+
+  .container {
+    width: calc(33.33% - 40px); /* 3 per row, accounting for margins */
+    margin: 10px;
+  }
+
+}

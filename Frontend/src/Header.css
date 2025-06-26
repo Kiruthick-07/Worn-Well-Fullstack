@@ -1,0 +1,93 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    color: black;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.navtitle{
+    font-weight: 800;
+    font-size: 30px;
+    margin-left: 50px;
+}
+.xmark {
+  text-align: right;
+  cursor: pointer;
+}
+.navlinks{
+    display: flex;
+    gap: 90px;
+    font-size: 20px;
+}
+.navlink{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    transition: 0.1s ease-in-out;
+}
+.togglemenu{
+    display: none;
+}
+.buttondiv{
+    display: flex;
+    margin-right: 40px;
+}
+.loginbutton{
+    background-color: black;
+    padding:10px 20px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 90px;
+    cursor: pointer;
+}
+.navlink:hover{
+    color: rgb(0, 43, 172);
+    text-decoration: underline;
+    transition: 0.1s ease-in-out;
+}
+.sidenavbar{
+    background-color: black;
+    color: aliceblue;
+    position: fixed;
+    width: 40%;
+    height: 100%;
+    display: none;
+    left: 0;
+    padding: 20px;
+    z-index: 1000;
+    top: 0;
+}
+.sidenavlinks{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidenavlink{
+    color: white;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+ @media screen and (max-width:800px){
+    .togglemenu{
+        display: block;
+        margin-right: 50px;
+    }
+    .navlinks{
+        display: none;
+    }
+    .buttondiv{
+        display: none;
+    }
+    .sidenavbar{
+        display: block;
+        top: 10%;
+    }
+
+ }
